@@ -1,4 +1,4 @@
-#! /bin/python
+#! /usr/bin/python
 import argparse
 from fingerprint import Fingerprint
 import sys
