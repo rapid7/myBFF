@@ -1,4 +1,4 @@
-#! /bin/python
+#! /usr/bin/python
 # Created by Kirk Hayes (l0gan) @kirkphayes
 # Part of myBFF
 from requests import session

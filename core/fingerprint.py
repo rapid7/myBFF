@@ -11,7 +11,7 @@ from modules.Office365Brute import office365Brute
 from modules.owaBrute import OWAlogin
 from modules.citrixBrute2010 import citrixbrute2010
 from modules.citAPI import citapiBrute
-#from modules.SMBbrute import SMB
+from modules.SMBbrute import SMB
 
 class Fingerprint():
     def connect(self, config):
@@ -68,5 +68,9 @@ class Fingerprint():
                     office365.payload(config)
                 else:
                     print "[-]  Fingerprinting Failed."
+	elif 'smb' in config["HOST"]:
+		print("[+]  SMB Brute Force Module running....")
+		smb = SMB()
+		smb.payload(config)
         else:
             print("Other protocols have not yet been implemented, but I'm working on it! :-)")

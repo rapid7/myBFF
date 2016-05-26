@@ -1,4 +1,4 @@
-#! /bin/python
+#! /usr/bin/python
 # Created by Kirk Hayes (l0gan) @kirkphayes
 # Part of myBFF
 from requests import session
@@ -7,6 +7,9 @@ import re
 from argparse import ArgumentParser
 
 class MobileIron():
+    def somethingCool(self, config, payload, cookies):
+        print("this is going to do something cool one day...")
+
     def connectTest(self, config, payload):
         with session() as c:
             requests.packages.urllib3.disable_warnings()
@@ -19,6 +22,7 @@ class MobileIron():
             m = re.search('You are unauthorized to access this page.', cpost.text)
             if m:
                 print("[+]  User Credentials Successful: " + config["USERNAME"] + ":" + config["PASSWORD"])
+                self.somethingCool(config, payload, cookies)
             else:
                 print("[-]  Login Failed for: " + config["USERNAME"] + ":" + config["PASSWORD"])
     def payload(self, config):
