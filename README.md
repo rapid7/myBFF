@@ -73,9 +73,11 @@ New modules will be added.
 
 ## CONFIGURATION
 myBFF requires lxml and pysmb. 
+
 Install using 
 
 'sudo apt-get install python-lxml'
+
 'sudo pip install pysmb'
 
 ## USE:
