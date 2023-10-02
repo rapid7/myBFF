@@ -1,0 +1,14 @@
+---
+info:
+  title: Mybff
+  description: myBFF - a Brute Force Framework
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/myBFF
+  x-cortex-tag: mybff
+  x-cortex-type: service
+  x-cortex-owners: []
+openapi: 3.0.1
+servers:
+- url: "/"
