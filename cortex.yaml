@@ -8,7 +8,8 @@ info:
       repository: rapid7/myBFF
   x-cortex-tag: mybff
   x-cortex-type: service
-  x-cortex-owners: []
+  x-cortex-domain-parents:
+  - tag: pentesting
 openapi: 3.0.1
 servers:
 - url: "/"
